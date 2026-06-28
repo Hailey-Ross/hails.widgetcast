@@ -2,6 +2,11 @@
 
 A service that bridges an [AzuraCast](https://azuracast.com) radio station with Discord's profile widget system (Widget v2 / Social Layer). It polls the AzuraCast public API every 30 seconds and pushes live now-playing data to a Discord profile widget.
 
+## Preview
+
+<a href="preview1.png"><img src="preview1.png" width="450" alt="Widget expanded view"></a>
+<a href="preview2.png"><img src="preview2.png" width="220" alt="Widget compact view"></a>
+
 ## How It Works
 
 1. AzuraCast exposes a public JSON API at `/api/nowplaying/{station}` with the current track, artist, album art, listener count, and song history.

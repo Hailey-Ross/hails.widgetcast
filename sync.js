@@ -10,7 +10,7 @@ if (!BOT_TOKEN || !APPLICATION_ID || !USER_ID) {
 
 const AZURACAST_URL = 'http://hails.live/api/nowplaying/radio';
 const DISCORD_URL = `https://discord.com/api/v9/applications/${APPLICATION_ID}/users/${USER_ID}/identities/0/profile`;
-const POLL_INTERVAL_MS = 30_000;
+const POLL_INTERVAL_MS = 9_000;
 
 let lastSongId = null;
 
@@ -75,7 +75,7 @@ async function sync() {
       { type: 1, name: 'artist',        value: song.artist ? `Artist: ${song.artist}` : '' },
       { type: 1, name: 'playlist',      value: np.playlist ? `Playlist: ${np.playlist}` : '' },
       { type: 2, name: 'listeners',     value: listeners.current ?? 0 },
-      { type: 1, name: 'album',          value: song.album ? `Album: ${song.album}` : '' },
+      { type: 1, name: 'album',          value: `Album: ${song.album || 'Unknown'}` },
       { type: 1, name: 'live_status',   value: liveStatus },
       { type: 2, name: 'song_elapsed',        value: elapsed },
       { type: 2, name: 'song_duration',       value: duration },
