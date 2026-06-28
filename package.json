@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "node sync.js"
+    "start": "node sync.js",
+    "fields": "node gen-fields-table.js"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
