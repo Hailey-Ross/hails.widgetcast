@@ -1,6 +1,6 @@
 # hails.live Discord Widget
 
-A service that bridges an [AzuraCast](https://azuracast.com) radio station with Discord's profile widget system (Widget v2 / Social Layer). It polls the AzuraCast public API every 30 seconds and pushes live now-playing data to a Discord profile widget.
+A service that bridges an [AzuraCast](https://azuracast.com) radio station with Discord's profile widget system (Widget v2 / Social Layer). It polls the AzuraCast public API every 9 seconds and pushes live now-playing data to a Discord profile widget.
 
 ## Preview
 
@@ -210,4 +210,4 @@ To point this at a different AzuraCast station, edit the `AZURACAST_URL` constan
 const AZURACAST_URL = 'http://your-azuracast-domain.com/api/nowplaying/your_station_shortcode';
 ```
 
-The poll interval is also configurable via `POLL_INTERVAL_MS` (default is 30000ms / 30 seconds).
+The poll interval is also configurable via `POLL_INTERVAL_MS` (default is 9000ms / 9 seconds).
